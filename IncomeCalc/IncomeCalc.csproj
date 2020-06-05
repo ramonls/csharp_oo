@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Departament.cs" />
+    <Compile Include="Entities\Enums\WorkerLevel.cs" />
     <Compile Include="Entities\HourContract.cs" />
+    <Compile Include="Entities\Worker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
