@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncomeCalc", "IncomeCalc\IncomeCalc.csproj", "{F6BC742D-21DD-478A-9396-DF9FFE0A2080}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostTravel", "PostTravel\PostTravel.csproj", "{3F0F3E2A-1302-4F86-A93A-CC0141690EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F6BC742D-21DD-478A-9396-DF9FFE0A2080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6BC742D-21DD-478A-9396-DF9FFE0A2080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6BC742D-21DD-478A-9396-DF9FFE0A2080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0F3E2A-1302-4F86-A93A-CC0141690EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0F3E2A-1302-4F86-A93A-CC0141690EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0F3E2A-1302-4F86-A93A-CC0141690EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0F3E2A-1302-4F86-A93A-CC0141690EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
