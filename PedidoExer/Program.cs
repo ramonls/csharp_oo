@@ -18,18 +18,16 @@ namespace PedidoExer
             string nome = Console.ReadLine();
             Console.Write("Email: ");
             string email = Console.ReadLine();
-            Console.Write("Data de Nascimento: ");
+            Console.Write("Data de Nascimento (DD/MM/AAAA): ");
             String dataNascimento = Console.ReadLine();
-            Console.WriteLine("Entre com informações do pedido:");
-            Cliente cliente = new Cliente(nome, email, dataNascimento);
-
             Console.WriteLine("Entre com os dados do pedido:");
+            Cliente cliente = new Cliente(nome, email, dataNascimento);
             Console.Write("Status: ");
             StatusPedido status = (StatusPedido) StatusPedido.Parse(typeof(StatusPedido), Console.ReadLine());
             Pedido pedido = new Pedido(status, cliente);
             ItemPedido itemPedido;
 
-            Console.Write("Quandos itens tem o pedido? ");
+            Console.Write("Quantos itens tem o pedido? ");
             int quantidadeItem = int.Parse(Console.ReadLine());
             for(int i=1; i <= quantidadeItem; i++)
             {
@@ -44,6 +42,7 @@ namespace PedidoExer
                 itemPedido = new ItemPedido(quantidadeProduto, precoProduto, produto);
                 pedido.AddItem(itemPedido);
             }
+            Console.WriteLine("");
             Console.WriteLine(pedido);           
             Console.ReadLine();
         }

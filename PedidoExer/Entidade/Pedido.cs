@@ -25,7 +25,7 @@ namespace PedidoExer.Entidade
         {
             Momento = DateTime.Now;
             Status = status;
-            Cliente = Cliente;
+            Cliente = cliente;
         }
 
         public void AddItem(ItemPedido item)
@@ -42,7 +42,7 @@ namespace PedidoExer.Entidade
             double total = 0;
             foreach(ItemPedido item in Items)
             {
-                total += (double)item.Preco;
+                total += (double)item.SubTotal();
             }
             return total;
         }
@@ -58,13 +58,13 @@ namespace PedidoExer.Entidade
             sb.Append("Cliente: ");
             sb.Append(Cliente.Nome);
             sb.Append(" (");
-            sb.Append(Cliente.DataNascimento);
+            sb.Append(Cliente.DataNascimento.ToString("dd/MM/yyyy"));
             sb.Append(") - ");
             sb.AppendLine(Cliente.Email);
             sb.AppendLine("Itens do Pedido:");
             foreach(ItemPedido item in Items)
             {
-                sb.Append(item.Produto);
+                sb.Append(item.Produto.Nome);
                 sb.Append(", $");
                 sb.Append(item.Preco);
                 sb.Append(", Quantidade: ");
