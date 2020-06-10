@@ -17,11 +17,11 @@ namespace PedidoExer.Entidade
         {
         }
 
-        public Cliente(string nome, string email, DateTime dataNascimento)
+        public Cliente(string nome, string email, string dataNascimento)
         {
             Nome = nome;
             Email = email;
-            DataNascimento = dataNascimento;
+            DataNascimento = DateTime.Parse(dataNascimento);
         }
     }
 }
