@@ -46,6 +46,7 @@
     <Compile Include="Entidade\Cliente.cs" />
     <Compile Include="Entidade\Enums\StatusPedido.cs" />
     <Compile Include="Entidade\ItemPedido.cs" />
+    <Compile Include="Entidade\Pedido.cs" />
     <Compile Include="Entidade\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
