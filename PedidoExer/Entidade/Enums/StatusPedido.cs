@@ -1,5 +1,4 @@
-﻿
-namespace PedidoExer.Entidade.Enums
+﻿namespace PedidoExer.Entidade.Enums
 {
     enum StatusPedido : int
     {
