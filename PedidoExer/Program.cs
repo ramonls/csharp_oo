@@ -15,11 +15,11 @@ namespace PedidoExer
             Console.Write("Email: ");
             string email = Console.ReadLine();
             Console.Write("Data de Nascimento (DD/MM/AAAA): ");
-            String dataNascimento = Console.ReadLine();
-            Console.WriteLine("Entre com os dados do pedido:");
+            string dataNascimento = Console.ReadLine();
             Cliente cliente = new Cliente(nome, email, dataNascimento);
+            Console.WriteLine("Entre com os dados do pedido:");
             Console.Write("Status: ");
-            StatusPedido status = (StatusPedido) StatusPedido.Parse(typeof(StatusPedido), Console.ReadLine());
+            StatusPedido status = (StatusPedido) Enum.Parse(typeof(StatusPedido), Console.ReadLine());
             Pedido pedido = new Pedido(status, cliente);
             ItemPedido itemPedido;
 
