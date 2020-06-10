@@ -26,6 +26,7 @@ namespace PedidoExer
             Console.WriteLine("Entre com os dados do pedido:");
             Console.Write("Status: ");
             StatusPedido status = (StatusPedido) StatusPedido.Parse(typeof(StatusPedido), Console.ReadLine());
+            Pedido pedido = new Pedido(status, cliente);
             ItemPedido itemPedido;
 
             Console.Write("Quandos itens tem o pedido? ");
@@ -41,11 +42,9 @@ namespace PedidoExer
                 int quantidadeProduto = int.Parse(Console.ReadLine());
                 Produto produto = new Produto(nomeProduto, precoProduto);
                 itemPedido = new ItemPedido(quantidadeProduto, precoProduto, produto);
+                pedido.AddItem(itemPedido);
             }
-
-            
-            
-            
+            Console.WriteLine(pedido);           
             Console.ReadLine();
         }
     }
