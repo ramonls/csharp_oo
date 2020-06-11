@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostTravel", "PostTravel\Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoExer", "PedidoExer\PedidoExer.csproj", "{F9AF62EB-BE3C-4159-819F-4EFCD4039F96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca", "Heranca\Heranca.csproj", "{36779E74-EA35-41F9-A1FC-4EEF7598D108}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F9AF62EB-BE3C-4159-819F-4EFCD4039F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9AF62EB-BE3C-4159-819F-4EFCD4039F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9AF62EB-BE3C-4159-819F-4EFCD4039F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36779E74-EA35-41F9-A1FC-4EEF7598D108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36779E74-EA35-41F9-A1FC-4EEF7598D108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36779E74-EA35-41F9-A1FC-4EEF7598D108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36779E74-EA35-41F9-A1FC-4EEF7598D108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
