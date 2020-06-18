@@ -20,11 +20,11 @@ namespace Heranca
             Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
 
             //DownCasting
-            BusinessAccount acc4 = (BusinessAccount)acc3;
+            BusinessAccount acc4 = (BusinessAccount)acc2;
             acc4.Loan(100.0);
 
             //Outra forma de converter (casting) usando a palavra reservada as
-            BusinessAccount acc6 = acc3 as BusinessAccount;
+            BusinessAccount acc6 = acc2 as BusinessAccount;
 
             /*
             * BusinessAccount acc5 = (BusinessAccount) acc3;
@@ -37,7 +37,20 @@ namespace Heranca
             {
                 BusinessAccount acc5 = (BusinessAccount)acc3;
             }
+            Console.WriteLine("__________________________________________________________");
+            Console.WriteLine("");
 
+            Account conta1 = new Account(1001, "Alex", 500.0);
+            Account conta2 = new SavingsAccount(1001, "Anna", 500.0, 0.01);
+
+            //retirando dinheiro das duas contas
+            conta1.Withdraw(10.0);
+            conta2.Withdraw(10.0);//Como foi sobrescrito o método na SavingsAccount, não pode ter taxa
+
+            Console.WriteLine(conta1.Balance);
+            Console.WriteLine(conta2.Balance);
+
+            Console.ReadLine();
         }
     }
 }

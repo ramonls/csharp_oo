@@ -24,9 +24,10 @@ namespace Heranca.Entities
         }
 
         //Método para retirada de dinheiro
-        public void Withdraw(double amount)
+        //virtual é para indicar que ele pode ser sobrescrito nas subclasses
+        public virtual void Withdraw(double amount)
         {
-            Balance -= amount;
+            Balance -= amount + 5.0; //5.0 é a taxa que é descontada quando faz um saque
         }
         //Método para deposito
         public void Deposit(double amount)
