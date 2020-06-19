@@ -1,9 +1,5 @@
 ﻿using Heranca.Entities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Heranca
 {
@@ -33,7 +29,7 @@ namespace Heranca
             * a palavra reservada is
             */
             //Se a variável acc3 for do tipo BusinessAccount --> Irá atribuir e converter <--
-            if(acc3 is BusinessAccount)
+            if (acc3 is BusinessAccount)
             {
                 BusinessAccount acc5 = (BusinessAccount)acc3;
             }

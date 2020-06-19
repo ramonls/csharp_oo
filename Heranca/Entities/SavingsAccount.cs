@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Heranca.Entities
+﻿namespace Heranca.Entities
 {
     class SavingsAccount : Account
     {
@@ -15,7 +9,7 @@ namespace Heranca.Entities
         {
         }
 
-        public SavingsAccount (int number, string holder, double balance, double interesRate) : base(number, holder, balance)
+        public SavingsAccount(int number, string holder, double balance, double interesRate) : base(number, holder, balance)
         {
             InteresRate = interesRate;
         }
