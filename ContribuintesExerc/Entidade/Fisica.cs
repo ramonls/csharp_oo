@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ContribuintesExerc.Entidade
+﻿namespace ContribuintesExerc.Entidade
 {
     class Fisica : Pessoa
     {
         public double GastoComSaude { get; set; }
 
-        public Fisica(double gastoComSaude, string nome, double rendaAnual): base(nome, rendaAnual)
+        public Fisica(double gastoComSaude, string nome, double rendaAnual) : base(nome, rendaAnual)
         {
             GastoComSaude = gastoComSaude;
         }

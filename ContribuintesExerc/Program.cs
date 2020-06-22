@@ -1,8 +1,7 @@
-﻿using System;
-using System.Runtime.Serialization.Formatters;
-using System.Globalization;
+﻿using ContribuintesExerc.Entidade;
+using System;
 using System.Collections.Generic;
-using ContribuintesExerc.Entidade;
+using System.Globalization;
 
 namespace ContribuintesExerc
 {
@@ -14,7 +13,7 @@ namespace ContribuintesExerc
             Console.Write("Entre com o numero de pagamentos de taxa: ");
             int numeroTaxa = int.Parse(Console.ReadLine());
 
-            for(int i=1; i<= numeroTaxa; i++)
+            for (int i = 1; i <= numeroTaxa; i++)
             {
                 Console.WriteLine($"Informações do pagamento da taxa #{i}:");
                 Console.Write("Física ou Juridica (f/j): ");
@@ -24,13 +23,13 @@ namespace ContribuintesExerc
                 Console.Write("Renda Anual: R$");
                 double rendaAnual = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                if(tipo == 'f')
+                if (tipo == 'f')
                 {
                     Console.Write("Despesa Médica: R$");
                     double despesaMedica = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     lista.Add(new Fisica(despesaMedica, nome, rendaAnual));
                 }
-                if(tipo == 'j')
+                if (tipo == 'j')
                 {
                     Console.Write("Numero de Empregados: ");
                     int numeroEmpregado = int.Parse(Console.ReadLine());
