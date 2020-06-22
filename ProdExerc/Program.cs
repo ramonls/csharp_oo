@@ -6,7 +6,10 @@ namespace ProdExerc
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Enter the number of products: ");
+            int numberProducts = int.Parse(Console.ReadLine());
+
+
         }
     }
 }
