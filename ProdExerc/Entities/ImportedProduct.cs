@@ -14,6 +14,7 @@ namespace ProdExerc.Entities
         public ImportedProduct(string name, double price, double customsFess): base(name, price)
         {
             CustomsFee = customsFess;
+            TotalPrice();
         }
 
         public double TotalPrice()
