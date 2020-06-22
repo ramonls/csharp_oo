@@ -17,10 +17,19 @@ namespace Enums
             //Conversão enumerado para string
             string txt = StatusDoPedido.PagamentoPendente.ToString();
             Console.WriteLine(txt);
-
-            //Converter de String para Enumerado
-            StatusDoPedido sp = (StatusDoPedido) Enum.Parse(typeof(StatusDoPedido), "Entregue");
-            Console.WriteLine(sp);
+            Console.WriteLine("");
+            Console.Write("Digite o status do pedido: ");
+            string status = Console.ReadLine();
+            if(Enum.IsDefined(typeof(StatusDoPedido), status))
+            {
+                //Converter de String para Enumerado
+                StatusDoPedido sp = (StatusDoPedido)Enum.Parse(typeof(StatusDoPedido), status);
+                Console.WriteLine("Resultado = "+(int)sp);
+            }
+            else
+            {
+                Console.WriteLine("Status não encontrado!");
+            }
             Console.ReadLine();
 
         }
