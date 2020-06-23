@@ -35,9 +35,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidoExer", "PedidoExer\Pe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heranca", "Heranca\Heranca.csproj", "{36779E74-EA35-41F9-A1FC-4EEF7598D108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdExerc", "ProdExerc\ProdExerc.csproj", "{0C1AB070-E77E-4238-ADF2-E0C85D87F862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProdExerc", "ProdExerc\ProdExerc.csproj", "{0C1AB070-E77E-4238-ADF2-E0C85D87F862}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContribuintesExerc", "ContribuintesExerc\ContribuintesExerc.csproj", "{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContribuintesExerc", "ContribuintesExerc\ContribuintesExerc.csproj", "{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBancariaExcecao", "CBancariaExcecao\CBancariaExcecao.csproj", "{5279E068-22DC-4308-A295-0A0C9E7A981D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
