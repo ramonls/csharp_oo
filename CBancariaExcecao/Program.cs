@@ -9,6 +9,7 @@ namespace CBancariaExcecao
     {
         static void Main(string[] args)
         {
+            Conta conta = new Conta();
             try
             {
                 Console.WriteLine("Enntre com as informações da conta:");
@@ -20,11 +21,20 @@ namespace CBancariaExcecao
                 double saldoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Limite de retirada: R$");
                 double limiteRetirada = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                conta = new Conta(numero, titular, saldoInicial, limiteRetirada);
 
+                Console.WriteLine();
+                Console.Write("Entre com o valor para retirada: R$");
+                double valorRetirar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                conta.Retirada(valorRetirar);
 
+                Console.WriteLine(conta);
+                Console.ReadLine();
             }
-            
-
+            catch
+            {
+                Console.WriteLine("Erro Program");
+            }
         }
     }
 }
