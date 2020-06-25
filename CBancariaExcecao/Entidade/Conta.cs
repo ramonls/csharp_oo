@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CBancariaExcecao.Entidade.Excecao;
 using System.Globalization;
-using System.Net;
-using System.Text;
-using CBancariaExcecao.Entidade.Excecao;
 
 namespace CBancariaExcecao.Entidade
 {
@@ -19,52 +15,39 @@ namespace CBancariaExcecao.Entidade
         }
         public Conta(int numero, string nome, double saldo, double limiteRetirada)
         {
-            if (limiteRetirada < 0)
-                throw new CBExcecao("Limite de retirada não pode ser menor que zero!");
-            try
-            {
-                Numero = numero;
-                Nome = nome;
-                Saldo = saldo;
-                LimiteRetirada = limiteRetirada;
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Erro no construtor: "+e);
-            }    
+            if (limiteRetirada <= 0)
+                throw new CBExcecao("Limite de retirada não pode ser menor ou igual a zero!");
+            Numero = numero;
+            Nome = nome;
+            Saldo = saldo;
+            LimiteRetirada = limiteRetirada;
+
         }
 
         public void Deposito(double montante)
         {
-            try
-            {
-                Saldo += montante;
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Erro no deposito: "+e);
-            }
+
+            if (montante <= 0)
+                throw new CBExcecao("Valor não pode ser menor ou igual a zero!");
+            Saldo += montante;
+
         }
         public void Retirada(double montante)
         {
-            try
-            {
-                if (montante > LimiteRetirada)
-                    throw new CBExcecao("Erro - Valor superior ao limite de retirada!");
-                if (montante > Saldo)
-                    throw new CBExcecao("Erro - Valor superior ao saldo!");
 
-                Saldo -= montante;
-            }
-            catch
-            {
-                Console.WriteLine("Erro na Retirada!");
-            }
+
+            if (montante > LimiteRetirada)
+                throw new CBExcecao("Erro - Valor superior ao limite de retirada!");
+            if (montante > Saldo)
+                throw new CBExcecao("Erro - Valor superior ao saldo!");
+            Saldo -= montante;
+
+
         }
 
         public override string ToString()
         {
-            return "Novo Saldo: R$"+Saldo.ToString("F2", CultureInfo.InvariantCulture);
+            return "Novo Saldo: R$" + Saldo.ToString("F2", CultureInfo.InvariantCulture);
         }
 
     }

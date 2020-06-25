@@ -1,7 +1,8 @@
-﻿using System;
-using System.Globalization;
-using CBancariaExcecao.Entidade;
+﻿using CBancariaExcecao.Entidade;
 using CBancariaExcecao.Entidade.Excecao;
+using System;
+using System.Globalization;
+using System.Threading.Channels;
 
 namespace CBancariaExcecao
 {
@@ -9,6 +10,7 @@ namespace CBancariaExcecao
     {
         static void Main(string[] args)
         {
+
             Conta conta = new Conta();
             try
             {
@@ -28,13 +30,17 @@ namespace CBancariaExcecao
                 double valorRetirar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 conta.Retirada(valorRetirar);
 
-                Console.WriteLine(conta);
-                Console.ReadLine();
             }
-            catch
+            catch (FormatException)
             {
-                Console.WriteLine("Erro Program");
+                Console.WriteLine("Erro ao digitar informações");
             }
+            catch (CBExcecao e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine(conta);
+            Console.ReadLine();
         }
     }
 }
