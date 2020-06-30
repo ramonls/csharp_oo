@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProdExerc", "ProdExerc\Prod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContribuintesExerc", "ContribuintesExerc\ContribuintesExerc.csproj", "{B3AAD75C-4E76-441E-AE96-3F06CB7C4F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBancariaExcecao", "CBancariaExcecao\CBancariaExcecao.csproj", "{5279E068-22DC-4308-A295-0A0C9E7A981D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CBancariaExcecao", "CBancariaExcecao\CBancariaExcecao.csproj", "{5279E068-22DC-4308-A295-0A0C9E7A981D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulandoArquivos", "ManipulandoArquivos\ManipulandoArquivos.csproj", "{ABFBCFA1-C4DB-495F-9093-50BBAF5E3BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5279E068-22DC-4308-A295-0A0C9E7A981D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFBCFA1-C4DB-495F-9093-50BBAF5E3BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFBCFA1-C4DB-495F-9093-50BBAF5E3BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFBCFA1-C4DB-495F-9093-50BBAF5E3BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFBCFA1-C4DB-495F-9093-50BBAF5E3BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
