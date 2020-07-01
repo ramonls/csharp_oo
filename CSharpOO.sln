@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulandoArquivos", "Mani
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulandoDiretorio", "ManipulandoDiretorio\ManipulandoDiretorio.csproj", "{A1DC3046-68FF-45CC-9FD5-B6C697435EF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassePath", "ClassePath\ClassePath.csproj", "{F2F154F6-9007-4132-A61F-ABDAC216F1D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{A1DC3046-68FF-45CC-9FD5-B6C697435EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DC3046-68FF-45CC-9FD5-B6C697435EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DC3046-68FF-45CC-9FD5-B6C697435EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
