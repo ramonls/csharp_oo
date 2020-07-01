@@ -14,7 +14,7 @@ namespace ManipulandoArquivos
         {
             //Sem o @ teriamos que colocar duas barras. EX: "C:\\csharp_aula\\arquivo1.txt"
             string caminhoOrigem = @"C:\csharp_aula\arquivo1.txt";
-            string caminhoDestino = @"C:\csharp_aula\arquivo2.txt";
+            //string caminhoDestino = @"C:\csharp_aula\arquivo2.txt";
 
             try
             {
@@ -39,7 +39,7 @@ namespace ManipulandoArquivos
             Console.WriteLine();
             Console.WriteLine("#########################################");
 
-            FileStream fs = null;
+            //FileStream fs = null;
             StreamReader sr = null;
             try
             {
@@ -65,6 +65,34 @@ namespace ManipulandoArquivos
                 if (sr != null) sr.Close();
                 //if (fs != null) fs.Close();
                 
+            }
+
+            Console.WriteLine();
+            /*
+             * Aqui vamos usar o bloco using, para quando o procedimento de manipular o arquivo terminar ele
+             * fechar automaticamente, sem ser preciso fechar manualmente.
+             */
+            Console.WriteLine("### Usando o bloco using ###");
+            Console.WriteLine();
+
+            try
+            {
+                using(FileStream FS = new FileStream(caminhoOrigem, FileMode.Open))
+                {
+                    using(StreamReader SR = new StreamReader(FS))
+                    {
+                        while (!SR.EndOfStream)
+                        {
+                            string line = SR.ReadLine();
+                            Console.WriteLine("Linha(using): "+line);
+                        }
+                    }
+                }
+            }
+            catch (IOException e)
+            {
+
+                Console.WriteLine("Erro: "+e.Message);
             }
 
 
