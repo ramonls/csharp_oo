@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulandoDiretorio", "Man
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassePath", "ClassePath\ClassePath.csproj", "{F2F154F6-9007-4132-A61F-ABDAC216F1D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArqCSVExerc", "ArqCSVExerc\ArqCSVExerc.csproj", "{F5221E42-9F09-4D89-BC93-EC454DF24C60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2F154F6-9007-4132-A61F-ABDAC216F1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5221E42-9F09-4D89-BC93-EC454DF24C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5221E42-9F09-4D89-BC93-EC454DF24C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5221E42-9F09-4D89-BC93-EC454DF24C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5221E42-9F09-4D89-BC93-EC454DF24C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
