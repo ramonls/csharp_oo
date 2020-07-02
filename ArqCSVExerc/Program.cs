@@ -27,7 +27,8 @@ namespace ArqCSVExerc
                             string[] elemento = linha.Split(',');
                             double preco = double.Parse(elemento[1], CultureInfo.InvariantCulture);
                             int quantidade = int.Parse(elemento[2]);
-                            Console.WriteLine(elemento[0]+", "+quantidade*preco);
+                            double total = quantidade * preco;
+                            Console.WriteLine(elemento[0]+", "+total.ToString("F2", CultureInfo.InvariantCulture));
                         }
                     }
                 }
