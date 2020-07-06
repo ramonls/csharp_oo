@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Contrato.cs" />
+    <Compile Include="Entidades\Parcela.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicos\IServicoPagamentoOnline.cs" />
+    <Compile Include="Servicos\ServicoContrato.cs" />
+    <Compile Include="Servicos\ServicoPayPal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
