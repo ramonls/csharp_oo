@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoExerc", "ContratoEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{A94F117C-3B66-4B5F-B33E-02CF4CDF2E8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceIComparable", "InterfaceIComparable\InterfaceIComparable.csproj", "{CF7992F5-2B68-4C8F-935D-911EC5FB7E95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{A94F117C-3B66-4B5F-B33E-02CF4CDF2E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94F117C-3B66-4B5F-B33E-02CF4CDF2E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A94F117C-3B66-4B5F-B33E-02CF4CDF2E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7992F5-2B68-4C8F-935D-911EC5FB7E95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7992F5-2B68-4C8F-935D-911EC5FB7E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7992F5-2B68-4C8F-935D-911EC5FB7E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7992F5-2B68-4C8F-935D-911EC5FB7E95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
