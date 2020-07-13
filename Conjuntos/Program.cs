@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Conjuntos
 {
@@ -10,6 +7,13 @@ namespace Conjuntos
     {
         static void Main(string[] args)
         {
+            //Instanciar uma coleção inserindo elementos, isso pode ser feitos para outras coleções
+            SortedSet<int> conjunto = new SortedSet<int>() {1, 5, 9, 7, 58, 12, 49, 35 };
+
+            //Poderiamos também definir um conjunto e atribuindo os elementos de outro conjunto
+            //No caso abaixo, a coleção conjunto receberia os valores do conjunto A
+            //SortedSet<int> conjunto = new SortedSet<int>(A);
+
             HashSet<int> A = new HashSet<int>();
             HashSet<int> B = new HashSet<int>();
             HashSet<int> C = new HashSet<int>();
@@ -46,8 +50,20 @@ namespace Conjuntos
                 contador++;
             }
             Console.WriteLine("Total de alunos: "+contador);
+            Console.WriteLine();
+            Console.WriteLine("Valores que foram inseridos no momento da instanciação do SortedSet:");
+            PrintCollection(conjunto);
 
             Console.ReadLine();
+        }
+        //fazer uma função para imprimir os objetos na tela, de forma genérica para qualquer coleção possa utiliza-lá
+        static void PrintCollection<T>(IEnumerable<T> collection)
+        {
+            foreach(T obj in collection)
+            {
+                Console.Write(obj + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
