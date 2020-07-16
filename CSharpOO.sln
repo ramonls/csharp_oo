@@ -61,6 +61,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethod", "Extensio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delegate.csproj", "{3E1BFF02-A271-47BC-903E-C9696390DA08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate", "Predicate\Predicate.csproj", "{D3360FC6-C17B-43B4-BC3A-6E37A4BADF5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{3E1BFF02-A271-47BC-903E-C9696390DA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E1BFF02-A271-47BC-903E-C9696390DA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E1BFF02-A271-47BC-903E-C9696390DA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3360FC6-C17B-43B4-BC3A-6E37A4BADF5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3360FC6-C17B-43B4-BC3A-6E37A4BADF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3360FC6-C17B-43B4-BC3A-6E37A4BADF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3360FC6-C17B-43B4-BC3A-6E37A4BADF5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
