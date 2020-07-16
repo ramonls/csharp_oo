@@ -20,7 +20,7 @@ namespace Predicate
 
             //Porém, poderíamos criar uma função substituiria a expressão lambda
             listaProdutos.RemoveAll(ComparaPreco);
-
+            //No RemoveAll, qualquer função que respeita a assinatura do predicate, irá funcionar
 
             foreach(Produto item in listaProdutos)
             {
