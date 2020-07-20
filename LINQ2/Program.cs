@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using LINQ2.Entities;
 
@@ -45,11 +46,14 @@ namespace LINQ2
                 new Product() {Id = 12, Name = "Level", Price = 70.0, Category = c1},
             };
 
-            var resultado1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.0);
+            //var resultado1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.0);
+            //sintaxe alterantiva
+            var resultado1 = from p in products where p.Category.Tier == 1 && p.Price < 900.0 select p;
             Print("Tier 1 e Preço < 900:", resultado1);
 
-
-            var resultado2 = products.Where(p => p.Category.Name == "Tools").Select(p => p.Name);
+            //var resultado2 = products.Where(p => p.Category.Name == "Tools").Select(p => p.Name);
+            //sintaxe alterantiva
+            var resultado2 = from p in products where p.Category.Name == "Tools" select p.Name;
             Print("Nome dos produtos da categoria Tools:", resultado2);
 
             /*
@@ -61,16 +65,24 @@ namespace LINQ2
              * do produto, fazemos como no SQL atribuindo apelido ao campo, no caso será o CategoryName
              */
 
-            var resultado3 = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name});
+            //var resultado3 = products.Where(p => p.Name[0] == 'C').Select(p => new { p.Name, p.Price, CategoryName = p.Category.Name});
+            //sintaxe alterantiva
+            var resultado3 = from p in products where p.Name[0] == 'C' select new { p.Name, p.Price, CategoriaNome = p.Category.Name };
             Print("Nomes começados com C e objeto anonimo:", resultado3);
 
             //Quando os preços forem iguais ele irá ordenar por nome
-            var resultado4 = products.Where(p => p.Category.Tier == 1).OrderBy(p => p.Price).ThenBy(p => p.Name);
+            //var resultado4 = products.Where(p => p.Category.Tier == 1).OrderBy(p => p.Price).ThenBy(p => p.Name);
+            //sintaxe alterantiva - nesta sintaxe alternativa teremos que alternar a ordenação, sendo primeiro o nome e depois o preço para que possamos obter o resusltado esperado na expressão acima
+            var resultado4 = from p in products where p.Category.Tier == 1 orderby p.Name orderby p.Price select p;
+
             Print("Tier 1 ordenado por preço e também por nome:", resultado4);
 
             //Aqui vamos aproveitar o resultado4 e vamos utilizar o Skip() para pular e o Take para pegar
             //vamos pular 2 e pegar os próximos 4 resultados
-            var resultado5 = resultado4.Skip(2).Take(4);
+            //var resultado5 = resultado4.Skip(2).Take(4);
+            //sintaxe alterantiva
+            //Operações especiais de Skip, Take etc, costuma-se colocar a expressão normal entre parênteses () de pois as expressões especiais
+            var resultado5 = (from p in resultado4 select p).Skip(2).Take(4);
             Print("Tier 1 ordenado por preço e também por nome pulando os 2 primeiros e pegando 4:", resultado5);
 
             /*
