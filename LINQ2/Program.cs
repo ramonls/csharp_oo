@@ -131,10 +131,12 @@ namespace LINQ2
             Console.WriteLine();
             //Operação de agrupamento
             //cada elemento retorna do tipo IGrouping<Category, Product>
-            var resultado11 = products.GroupBy(p => p.Category);
+            //var resultado11 = products.GroupBy(p => p.Category);
+            //sintaxe alterantiva
+            var resultado11 = from p in products group p by p.Category;
             //O tipo para o foreach terá que ser do mesmo tipo para ele percorre e gravar na variavel
             //terá uma chave Category e uma coleção Product
-            foreach(IGrouping<Category, Product> group in resultado11)
+            foreach (IGrouping<Category, Product> group in resultado11)
             {
                 Console.WriteLine("Categoria "+group.Key.Name+":");
                 //vamos fazer outro foreach para imprimir os produtos dessa categoria
